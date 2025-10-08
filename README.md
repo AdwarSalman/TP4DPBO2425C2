@@ -1,30 +1,29 @@
-TP4DPBO2025C2
-✋ Janji
+# TP4DPBO2025C2
+
+# Janji
 
 Saya Muhammad Adwar Salman dengan NIM (isi NIM kamu di sini) mengerjakan Tugas Praktikum 4 dalam mata kuliah Desain Pemrograman Berorientasi Objek (DPBO) untuk keberkahan-Nya, maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan.
 Aamiin.
 
-💡 Desain Program
+# Desain Program
 
 Aplikasi ini merupakan program manajemen data produk berbasis Java Swing yang mengimplementasikan operasi CRUD (Create, Read, Update, Delete).
-Setiap produk direpresentasikan oleh kelas Product, dan seluruh logika serta antarmuka dikelola melalui kelas ProductMenu.
+- Create: Menambahkan data produk baru.
+- Read: Menampilkan tabel produk.
+- Update: Mengedit data produk yang sudah ada.
+- Delete: Menghapus data produk.
 
-🧱 Kelas dan Struktur Program
-# Product
+# Kelas dan Struktur Program
+## Product
 
 Kelas model untuk menyimpan data produk, dengan atribut:
 
 id → ID unik produk
-
 nama → Nama produk
-
 harga → Harga produk
-
-stok → Jumlah stok produk
-
-merek → Atribut baru (brand atau nama dagang produk)
-
 kategori → Jenis produk yang dipilih melalui JComboBox
+stok → Jumlah stok produk
+merek → Atribut baru (brand atau nama dagang produk)
 
 Metode:
 
@@ -34,119 +33,70 @@ Getter & Setter untuk setiap atribut.
 
 Kelas GUI utama dengan komponen:
 
-JTextField → Input nama, harga, stok, dan merek
-
-JComboBox → Input kategori produk (bonus +20 karena bukan JTextField)
-
+JTextField → Input nama, harga, dan merek
+JSpinner → Input angka stok produk
+JComboBox → Input kategori produk 
 JTable → Menampilkan daftar produk
-
 JButton → Aksi CRUD:
-
 Add → Tambah produk baru
-
 Update → Ubah data produk
-
 Delete → Hapus produk dengan konfirmasi
-
 Clear → Kosongkan form input
 
-🔄 Alur Program
-# 1. Memulai Aplikasi
+# Struktur :
+Semuanya ditampung dalam main panel yang terbagi menjadi 3 bagian:
+- Bagian input untuk setiap atribut produk
+- Bagian tombol untuk interaktif user modifikasi data produk
+- Bagian Tabel untuk menampilkan data produk dan interaktif dapat di pilih untuk di modifikasi
+
+# Desain GUI
+
+<img width="876" height="687" alt="image" src="https://github.com/user-attachments/assets/c07d50dc-d526-463b-82e0-6a51ec4d3968" />
+
+
+# Alur Program
+## 1. Memulai Aplikasi
 
 Program dijalankan → ProductMenu terbuka.
+Tabel produk berisi data default, siap menerima data baru.
 
-Tabel produk kosong, siap menerima data baru.
-
-# 2. Menambahkan Produk (Create)
+## 2. Menambahkan Produk (Create)
 
 Pengguna mengisi form: Nama, Harga, Stok, Merek, dan Kategori.
-
 Klik tombol Add.
-
 Data disimpan ke dalam list dan langsung tampil di tabel.
 
-# 3. Menampilkan Produk (Read)
+## 3. Menampilkan Produk (Read)
 
 Seluruh data produk dalam list otomatis muncul di tabel (JTable).
-
 Tabel selalu diperbarui setelah operasi CRUD.
 
-# 4. Mengubah Produk (Update)
+## 4. Mengubah Produk (Update)
 
 Pilih produk dari tabel.
-
 Form otomatis menampilkan data produk yang dipilih.
-
 Edit data dan klik Update → tabel diperbarui.
 
-# 5. Menghapus Produk (Delete)
+## 5. Menghapus Produk (Delete)
 
 Pilih produk dari tabel.
-
 Klik tombol Delete.
-
 Muncul konfirmasi (JOptionPane.showConfirmDialog).
-
 Jika pengguna memilih Yes, data dihapus dari list dan tabel diperbarui.
 
-# 6. Mengosongkan Form (Clear)
+## 6. Mengosongkan Form (Clear)
 
 Klik Clear untuk mereset semua field input dan mengembalikan ComboBox ke posisi awal.
 
-🖥️ Desain GUI
 
-Tampilan dirancang menggunakan IntelliJ IDEA GUI Builder dengan layout sederhana dan terstruktur.
+# Catatan Teknis
 
-[Form Input Produk]
------------------------------------------------
-Nama: [__________]
-Harga: [__________]
-Stok:  [____]
-Merek: [__________]
-Kategori: [Electronics ▼]
-
-[Tabel Produk]
---------------------------------------------------------------
-| ID | Nama | Harga | Stok | Merek | Kategori |
---------------------------------------------------------------
-
-[Tombol Aksi]
-[Add] [Update] [Delete] [Clear]
+Atribut baru: merek & Stok
+Komponen tambahan: JSpinner untuk input stok dan JTextField untuk input merek
+Konfirmasi delete: menggunakan JOptionPane.showConfirmDialog
+Penyimpanan data: menggunakan ArrayList<Product>
+Update tabel otomatis: setiap operasi CRUD merefresh tampilan
+Menampilkan prompt konfirmasi sebelum delete
 
 📸 Dokumentasi Program
 
-Berikut dokumentasi yang menunjukkan seluruh operasi CRUD dijalankan dengan sukses:
-
-# 🟢 Create (Tambah Produk)
-
-# 🔵 Read (Tabel Produk)
-
-# 🟡 Update (Edit Produk)
-
-# 🔴 Delete (Konfirmasi & Hapus)
-
-📁 Semua screenshot disimpan di folder screenshot/ atau docs/ dalam repository.
-
-⚙️ Catatan Teknis
-
-Atribut baru: merek
-
-Komponen tambahan: JComboBox untuk kategori (bonus +20)
-
-Konfirmasi delete: menggunakan JOptionPane.showConfirmDialog
-
-Penyimpanan data: menggunakan ArrayList<Product>
-
-Update tabel otomatis: setiap operasi CRUD merefresh tampilan
-
-✅ Kesimpulan
-
-Program ini memenuhi seluruh ketentuan tugas:
-
-Mengimplementasikan CRUD lengkap
-
-Menambahkan atribut baru (merek)
-
-Menambahkan komponen bukan JTextField (JComboBox)
-
-Menampilkan prompt konfirmasi sebelum delete
