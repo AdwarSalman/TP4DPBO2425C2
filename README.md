@@ -105,6 +105,8 @@ https://github.com/user-attachments/assets/69f4dbae-591e-41e2-82f9-842cb09fcc51
 
 ## Update
 
-
+https://github.com/user-attachments/assets/47937396-2ab8-4501-a21d-b155028f37ce
 
 ## Delete
+
+https://github.com/user-attachments/assets/b6b97ac1-b525-4afe-924a-2a35fe487d94
