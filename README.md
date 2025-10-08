@@ -2,7 +2,7 @@
 
 # Janji
 
-Saya Muhammad Adwar Salman dengan NIM (isi NIM kamu di sini) mengerjakan Tugas Praktikum 4 dalam mata kuliah Desain Pemrograman Berorientasi Objek (DPBO) untuk keberkahan-Nya, maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan.
+Saya Muhammad Adwar Salman dengan NIM 2401539 mengerjakan Tugas Praktikum 4 dalam mata kuliah Desain Pemrograman Berorientasi Objek (DPBO) untuk keberkahan-Nya, maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan.
 Aamiin.
 
 # Desain Program
@@ -18,12 +18,12 @@ Aplikasi ini merupakan program manajemen data produk berbasis Java Swing yang me
 
 Kelas model untuk menyimpan data produk, dengan atribut:
 
-id → ID unik produk
-nama → Nama produk
-harga → Harga produk
-kategori → Jenis produk yang dipilih melalui JComboBox
-stok → Jumlah stok produk
-merek → Atribut baru (brand atau nama dagang produk)
+- id → ID unik produk
+- nama → Nama produk
+- harga → Harga produk
+- kategori → Jenis produk yang dipilih melalui JComboBox
+- stok → Jumlah stok produk
+- merek → Atribut baru (brand atau nama dagang produk)
 
 Metode:
 
@@ -33,15 +33,15 @@ Getter & Setter untuk setiap atribut.
 
 Kelas GUI utama dengan komponen:
 
-JTextField → Input nama, harga, dan merek
-JSpinner → Input angka stok produk
-JComboBox → Input kategori produk 
-JTable → Menampilkan daftar produk
-JButton → Aksi CRUD:
-Add → Tambah produk baru
-Update → Ubah data produk
-Delete → Hapus produk dengan konfirmasi
-Clear → Kosongkan form input
+- JTextField → Input nama, harga, dan merek
+- JSpinner → Input angka stok produk
+- JComboBox → Input kategori produk 
+- JTable → Menampilkan daftar produk
+- JButton → Aksi CRUD:
+- Add → Tambah produk baru
+- Update → Ubah data produk
+- Delete → Hapus produk dengan konfirmasi
+- Clear → Kosongkan form input
 
 # Struktur :
 Semuanya ditampung dalam main panel yang terbagi menjadi 3 bagian:
@@ -91,12 +91,12 @@ Klik Clear untuk mereset semua field input dan mengembalikan ComboBox ke posisi 
 
 # Catatan Teknis
 
-Atribut baru: merek & Stok
-Komponen tambahan: JSpinner untuk input stok dan JTextField untuk input merek
-Konfirmasi delete: menggunakan JOptionPane.showConfirmDialog
-Penyimpanan data: menggunakan ArrayList<Product>
-Update tabel otomatis: setiap operasi CRUD merefresh tampilan
-Menampilkan prompt konfirmasi sebelum delete
+- Atribut baru: merek & Stok
+- Komponen tambahan: JSpinner untuk input stok dan JTextField untuk input merek
+- Konfirmasi delete: menggunakan JOptionPane.showConfirmDialog
+- Penyimpanan data: menggunakan ArrayList<Product>
+- Update tabel otomatis: setiap operasi CRUD merefresh tampilan
+- Menampilkan prompt konfirmasi sebelum delete
 
 📸 Dokumentasi Program
 
